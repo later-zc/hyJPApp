@@ -1,0 +1,9 @@
+@import "@/assets/css/variables.scss";
+
+.home-popular {
+  @include normalFlex();
+
+  .popular-img {
+    width: 100%;
+  }
+}

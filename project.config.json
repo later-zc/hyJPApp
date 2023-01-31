@@ -2,9 +2,9 @@
   "miniprogramRoot": "./dist",
   "projectname": "hyJPApp",
   "description": "",
-  "appid": "touristappid",
+  "appid": "wx19a364b82cfaad03",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": false,
     "enhance": false,
     "compileHotReLoad": false,

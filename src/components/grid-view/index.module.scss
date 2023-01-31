@@ -1,0 +1,23 @@
+@import "@/assets/css/variables.scss";
+
+// 注意 border 边线
+$border-line: 4px;
+
+.grid-view {
+  display: flex;
+  // 换行-顶部线
+  flex-wrap: wrap;
+  border-top: $border-line solid $hy-bg-color-grey;
+
+  .item {
+    width: 50%;
+    // 修改盒子模型 + 底部线
+    box-sizing: border-box;
+    border-bottom: $border-line solid $hy-bg-color-grey;
+  }
+
+  .item:nth-child(odd) {
+    // 从 1 开始
+    border-right: $border-line solid $hy-bg-color-grey;
+  }
+}

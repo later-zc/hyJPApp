@@ -1,0 +1,28 @@
+$hy-color-primary: #ff464e; // 主题色
+
+$hy-text-color: $hy-color-primary; //基本色
+$hy-text-color-gray: #333; //深灰色
+
+$hy-text-color-shallow-gray: #666; //浅灰色
+$hy-text-color-grey: #999; //浅浅灰色
+
+$hy-bg-color: #ffffff; // 白色
+$hy-bg-color-grey: #f2f2f2; // 浅灰色
+$hy-bg-color-pink-grey: rgb(242, 242, 247); // 粉灰色
+
+$hy-border-color: #ebebeb; // 灰色
+
+$hy-padding-lr: 24px;
+
+// 定义的scss混合
+@mixin normalFlex($direction: row, $justify: space-between) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin textEllipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

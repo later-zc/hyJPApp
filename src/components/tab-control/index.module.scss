@@ -1,0 +1,27 @@
+@import "@/assets/css/variables.scss";
+
+.tab-control {
+  display: flex;
+  align-items: center;
+
+  height: 98px;
+  background-color: white;
+
+  // 粘性定位
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.tab-item {
+  font-size: 36px;
+  margin: 0 20px;
+
+  color: $hy-text-color-gray; // 灰色
+  border-bottom: 6px solid transparent;
+
+  &.active {
+    color: $hy-color-primary;
+    border-bottom: 6px solid $hy-color-primary;
+  }
+}

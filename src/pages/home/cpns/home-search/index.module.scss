@@ -1,0 +1,38 @@
+@import '@/assets/css/variables.scss';
+
+.home-search {
+  height: 88px;
+  @include normalFlex();
+
+  .search-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 58px;
+    margin: 18px 0px 18px 18px;
+    background-color: $hy-bg-color-grey;
+    border-radius: 6px;
+
+    .left-search-img {
+      width: 44px;
+      height: 44px;
+      padding: 0px 8px 0px 6px;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: 500px;
+      color: $hy-color-primary;
+
+      .sub-name {
+        padding-right: 8px;
+        color: $hy-text-color-grey;
+      }
+    }
+  }
+
+  .right-search-img {
+    width: 88px;
+    height: 88px;
+  }
+}

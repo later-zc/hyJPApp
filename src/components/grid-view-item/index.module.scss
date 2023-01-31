@@ -1,0 +1,54 @@
+@import "@/assets/css/variables.scss";
+
+.grid-view-item {
+  .item-img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+
+  .item-price,
+  .item-title {
+    color: $hy-text-color-gray; //深灰色
+    font-size: 36px;
+    padding: 0 20px;
+  }
+
+  .item-price {
+    position: relative;
+    padding-top: 14px;
+    // 行高
+    line-height: 30px;
+
+    .price {
+      color: $hy-color-primary;
+      font-size: 32px;
+    }
+
+    .logo {
+      position: absolute;
+      top: -25px;
+      right: 24px;
+      width: 100px;
+      height: 50px;
+    }
+  }
+
+  .item-title {
+    @include normalFlex();
+    align-items: center;
+    padding-top: 10px;
+
+    .title {
+      width: 70%;
+      font-size: 30px;
+      @include textEllipsis();
+    }
+
+    .tips {
+      flex: 1;
+      font-size: 16px;
+      color: #bbb;
+      text-align: right;
+    }
+  }
+}
