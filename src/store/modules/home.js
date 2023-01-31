@@ -82,9 +82,6 @@ const homeSlice = createSlice({
         state.recommend = payload.recommend || null
       })
       .addCase(fetchHomeGoodsDataAction.fulfilled, (state, { payload }) => {
-        // console.log(type); // home/goods/状态(fulfilled )
-        // console.log("payload=>", payload);
-
         const { type, page, goods } = payload
         if (goods && goods.length) {
           state.goodsList[tabTypes[type]].list = [
