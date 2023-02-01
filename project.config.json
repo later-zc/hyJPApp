@@ -1,5 +1,5 @@
 {
-  "miniprogramRoot": "./dist",
+  "miniprogramRoot": "./dist/weapp/",
   "projectname": "hyJPApp",
   "description": "",
   "appid": "wx19a364b82cfaad03",
